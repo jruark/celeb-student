@@ -40,7 +40,7 @@ module.exports = {
 			loader: "babel",
 			exclude: /node_modules/,
       query: {
-        "presets": ["react", "es2015", "stage-0", "react-hmre"]
+        "presets": ["es2015", "stage-0"]
       }
 		},
     {
