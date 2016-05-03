@@ -2,10 +2,6 @@
 
 const express = require("express");
 const path = require("path");
-const webpack = require('webpack');
-const webpackMiddleware = require('webpack-dev-middleware');
-const webpackHotMiddleware = require('webpack-hot-middleware');
-const config = require('./webpack.config.js');
 const bodyParser = require("body-parser");
 const message = require('./server/message.js');
 const image = require('./server/image.js');
@@ -36,6 +32,11 @@ console.log("isDeveloping=" + isDeveloping);
 app.use(bodyParser.urlencoded({extended:false}));
 
 if( isDeveloping) {
+  const webpack = require('webpack');
+  const webpackMiddleware = require('webpack-dev-middleware');
+  const webpackHotMiddleware = require('webpack-hot-middleware');
+  const config = require('./webpack.config.js');
+
   console.log("Development mode");
   const compiler = webpack(config);
   const middleware = webpackMiddleware(compiler, {
@@ -104,5 +105,5 @@ app.listen(port, function onStart(err) {
   if(err) {
     console.log(err);
   }
-	console.info("Server running on port " + port + " public path " + config.output.publicPath);
+	console.info("Server running on port " + port);
 });
