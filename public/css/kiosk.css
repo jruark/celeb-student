@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+}
+#full { 
+  height: 95%;
+  width: 100%;
+  display: table;
+}
+#container { 
+  display: table-row;
+  height: 100%;
+}
+#header {
+  width: 100%; 
+  display: table-row;
+}
+.full-height {
+	height: 100%;
+}
+.menu-button-div {
+	height: 50%;
+}
+.menu-button {
+	height: 100%;
+	width: 100%;
+  vertical-align: middle;
+}
+.panel {
+	height: 100%;
+}
+.panel-hidden {
+	display: none;
+}
+textarea {
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+#imginput {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+input[type='file'] {
+  display: none;
+}
+label {
+  vertical-align: middle;
+  text-align: center;
+  display:table-cell;
+}
+.imgdiv {
+  display:table;
+}
+#alert {
+  display:none;
+}
