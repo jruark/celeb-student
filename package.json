@@ -1,7 +1,7 @@
 {
-  "name": "celebkiosk",
+  "name": "celeb-student",
   "version": "1.0.0",
-  "description": "",
+  "description": "Celebration Student UI",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -17,8 +17,8 @@
     ]
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "John Ruark",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.6",

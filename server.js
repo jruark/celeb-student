@@ -68,7 +68,7 @@ else {
   });
 }
 
-app.post("/kiosk/message", function(req,res) {
+app.post("/sapi/message", function(req,res) {
   var msg = req.body.message || "";
   msg = msg.trim();
   if(msg.length==0 || msg.length>140) {
@@ -83,7 +83,7 @@ app.post("/kiosk/message", function(req,res) {
   });
 });
 
-app.post("/kiosk/image", upload.single("image"), function(req,res) {
+app.post("/sapi/image", upload.single("image"), function(req,res) {
   if(req.file) {
     image.submit(req, res, req.file).then(function() {
       console.log("Got file");

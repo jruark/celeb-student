@@ -27,7 +27,7 @@ $(function() {
     $.ajax({
       data: {message: msg},
       method: "POST",
-      url: "kiosk/message"
+      url: "sapi/message"
     })
     .always(function() { dispmodal = false; $("#msgmodal").modal("hide"); })
     .done(function() { closeMessagePanel(); showAlert("Message sent!"); })
@@ -50,7 +50,7 @@ $(function() {
       contentType: false,
       processData: false,
       method: "POST",
-      url: "kiosk/image",
+      url: "sapi/image",
     })
     .always(function() { dispmodal = false; $("#msgmodal").modal("hide"); })
     .done(function() { showAlert("Image sent!"); })
