@@ -5,6 +5,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const message = require('./server/message.js');
 const image = require('./server/image.js');
+const gm = require('gm');
 
 const isDeveloping = (process.env.NODE_ENV || "").trim() !== "production";
 const port = isDeveloping ? 3000 : process.env.PORT;
